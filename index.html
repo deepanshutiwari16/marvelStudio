@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      body {
+        background-color: white;
+      }
+
+      .nav {
+        color: black;
+        font-size: large;
+        font-weight: 500;
+        margin-inline: 10px;
+        text-decoration: none;
+      }
+
+      #header {
+        background-color: #fefae0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+      }
+
+      #hero-section {
+        margin-block: 20px;
+        padding: 20px;
+      }
+
+      .heroes-image {
+        height: 100vh;
+        width: 100%;
+      }
+
+      #hero-heading {
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 20px;
+        font-size: xx-large;
+        background-color: #202020;
+      }
+
+      #avengers {
+        width: 100%;
+        padding-block: 20px;
+      }
+
+      .avengers-container {
+        display: flex;
+        margin: 20px;
+        background-color: #202020;
+        padding: 30px 15px;
+        gap: 15px;
+      }
+
+      p {
+        font-size: large;
+        color: white;
+      }
+
+      #avengers-image-container {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+      }
+
+      .avengers-image {
+        background-color: #fefae0;
+        padding: 10px 20px 30px 20px;
+        border: 3px solid black;
+        height: 200px;
+        width: 150px;
+      }
+
+      figure img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      img {
+        border-radius: 10px;
+      }
+
+      #movies-section {
+        margin: 20px;
+        background-color: white;
+        padding: 30px 15px;
+      }
+
+      #movies-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .movie-details {
+        background-color: #e9ecef;
+        padding: 10px;
+        margin-block: 10px;
+        width: 200px;
+        border: 2px solid white;
+        box-shadow: 10px 10px 5px grey;
+      }
+
+      .movie-details img {
+        height: 300px;
+        width: 200px;
+        object-fit: cover;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #edf6f9;
+      }
+
+      .social-link {
+        color: black;
+        margin: 10px;
+        text-decoration: none;
+        font-size: large;
+      }
+    </style>
+
+    <title>Marvel</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <img
+        src="https://imgs.search.brave.com/VNGJA_yzuEoTjT0Kwd2xAfM4dCwyH3BPA2Rt3ZECfVM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzEwL01hcnZlbF9T/dHVkaW9zXzIwMTZf/bG9nby5zdmc"
+        alt="Marvel's logo"
+        height="50px"
+      />
+      <nav>
+        <a class="nav" href="">Home</a>
+        <a class="nav" href="">Avengers</a>
+        <a class="nav" href="">X-Men</a>
+        <a class="nav" href="">Movies</a>
+      </nav>
+    </header>
+
+    <section id="hero-section">
+      <h2 id="hero-heading" style="color: white">
+        Welcome to the
+        <span style="color: rgb(255, 0, 0)">Marvel Universe</span>
+      </h2>
+      <img
+        class="heroes-image"
+        src="https://wallpapercave.com/wp/wp12153746.jpg"
+        alt=""
+      />
+    </section>
+
+    <section id="avengers">
+      <div class="avengers-container">
+        <img
+          src="https://wallpapercave.com/uwp/uwp4246753.jpeg"
+          alt=""
+          height="400px"
+        />
+
+        <div>
+          <h2 style="color: white">Avengers</h2>
+
+          <p>
+            The Avengers are a team of Earth's mightiest heroes in the Marvel
+            Universe, assembled to protect the world from powerful threats.
+            Founded by Iron Man, Thor, Hulk, Captain America, Black Widow, and
+            Hawkeye, the team battles villains like Loki, Ultron, and Thanos.
+            Known for their unity and strength, they fight to defend humanity,
+            embodying the motto "Avengers, Assemble!" Over time, the team has
+            expanded, including heroes like Black Panther, Doctor Strange, and
+            Spider-Man, making them one of Marvel’s most iconic superhero teams.
+          </p>
+          <hr />
+
+          <div id="avengers-image-container">
+            <figure class="avengers-image">
+              <img
+                src="https://c4.wallpaperflare.com/wallpaper/120/189/167/iron-man-poster-wallpaper-preview.jpg "
+                alt=""
+                height="200px"
+              />
+
+              <figcaption>Iron Man</figcaption>
+            </figure>
+
+            <figure class="avengers-image">
+              <img
+                src="https://wallpapercave.com/wp/wp8648245.jpg"
+                alt=""
+                height="200px"
+              />
+              <figcaption>Thor</figcaption>
+            </figure>
+
+            <figure class="avengers-image">
+              <img
+                src="https://wallpapercave.com/wp/wp12513247.jpg"
+                alt=""
+                height="200px"
+              />
+              <figcaption>Captain America</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="movies-section">
+      <h2>Popular Movies</h2>
+
+      <div id="movies-container">
+        <div class="movie-details">
+          <img
+            src="https://c4.wallpaperflare.com/wallpaper/361/823/829/avengers-endgame-iron-man-robert-downey-jr-captain-america-chris-evans-hd-wallpaper-preview.jpg"
+            alt=""
+            height="300px"
+          />
+          <h4>Avenger: Endgame</h4>
+          <h4>Rating: 8.4⭐️</h4>
+        </div>
+
+        <div class="movie-details">
+          <img
+            src="https://c4.wallpaperflare.com/wallpaper/940/455/621/iron-man-tony-stark-robert-downey-jr-gwyneth-paltrow-jeff-bridges-movie-posters-pepper-potts-obadiah-architecture-bridges-hd-art-wallpaper-preview.jpg"
+            alt=""
+            height="300px"
+          />
+          <h4>Iron Man</h4>
+          <h4>Rating: 7.9⭐️</h4>
+        </div>
+
+        <div class="movie-details">
+          <img
+            src="https://imgs.search.brave.com/kbjHZIb8C61iXwieoX6yoBsjMf1-R3xbFA-VM15TSFc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/b2ZmaWNpYWwtcG9z/dGVyLWZvci10aGUt/c3BpZGVyLW1hbi1u/by13YXktaG9tZS1y/ZS1yZWxlYXNlLXYw/LXV4cjJxOWJqajlq/OTEuanBnP3dpZHRo/PTY0MCZjcm9wPXNt/YXJ0JmF1dG89d2Vi/cCZzPWVkMjhmMzIx/NDM5NzUxNTA1MWYz/YjA1M2RlMzAwNGIx/OTM0NzUyMzE"
+            alt=""
+            height="300px"
+          />
+          <h4>Spider-Man: No Way Home</h4>
+          <h4>Rating: 8.2⭐️</h4>
+        </div>
+
+        <div class="movie-details">
+          <img
+            src="https://c4.wallpaperflare.com/wallpaper/730/250/432/thor-ragnarok-4k-8k-2017-wallpaper-preview.jpg"
+            alt=""
+            height="300px"
+          />
+          <h4>Thor: Ragnarok</h4>
+          <h4>Rating: 7.9⭐️</h4>
+        </div>
+        <div class="movie-details">
+          <img
+            src="https://c4.wallpaperflare.com/wallpaper/183/764/44/captain-america-the-winter-soldier-captain-america-nick-fury-black-widow-wallpaper-preview.jpg"
+            alt=""
+            height="300px"
+          />
+          <h4>Captain America: The Winter Soldier</h4>
+          <h4>Rating: 7.7⭐️</h4>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <footer class="footer">
+      <p style="color: black">
+        Copyright info: <q>&copy 2025 Marvel Fan Website</q>
+      </p>
+      <div>
+        <a class="social-link" href="#" target="_blank">Facebook</a>
+        <a class="social-link" href="#" target="_blank">Twitter</a>
+        <a class="social-link" href="#" target="_blank">Instagram</a>
+        <a class="social-link" href="#" target="_blank">YouTube</a>
+      </div>
+    </footer>
+  </body>
+</html>
